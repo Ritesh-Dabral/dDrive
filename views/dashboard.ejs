@@ -1,0 +1,52 @@
+<%- include ('partials/header') %>
+
+    <link rel="stylesheet" href="/stylesheets/header.css" type="text/css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/dashboard.css" type="text/css">
+</head>
+<body>
+    <!-- LOGO -->
+    <div class="container logo" >
+            <div>
+                <img src="/images/logo.png" alt="dDrive LOGO">
+                <div class="logout">
+                    <i class="power off icon"></i>
+                    <h3><a href="/logout">Logout</a></h3>
+                </div>
+            </div>
+            <div class="ui divider"></div>
+            <h1 class="ui header">Welcome, to <span style="color:darkred">dDrive</span></h1>
+    </div>
+    
+    <!-- MAIN DISPLAY -->
+    <main>
+        <div class="container" id="allMaterial">
+            <div class="parentContainer">
+                <% allFiles.forEach(file=>{ %>
+                    <div class="childContainer">
+                        <div class="name">
+                            <div class="header"><%= file %></div>
+                        </div>
+                        <div class="dnld_btn">
+                            <form class="gap" action="/<%= userId %>/<%= file %>/download" method="GET">
+                                <button class="ui green button" type="submit">Download
+                                </button>      
+                            </form>
+                        </div>
+                    </div>
+                    <div class="eleDivider"></div>
+                <% }) %>
+            </div>
+        </div>
+        
+        <!-- upload form -->
+        <form action="/<%= userId %>/upload" enctype="multipart/form-data" method="POST">
+            <label for="fileUpload" class="customUploadBtn">Choose File(s)</label>
+            <input type="file" name="myFile" size="50" id="fileUpload" multiple/>
+            <br />
+            <button class="ui green button" type="submit">Upload</button>
+        </form>
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+<%- include ('partials/footer') %>

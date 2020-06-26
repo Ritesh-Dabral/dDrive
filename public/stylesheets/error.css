@@ -1,0 +1,9 @@
+.container.error {
+    margin: 5em;
+    height: 20rem;
+    width: auto;
+    padding: 5em;
+    text-align: center;
+    font-weight: 300;
+    font-size: larger;
+}

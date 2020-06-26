@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(249,249,249);
+}
+
+.footer_special{
+    text-align: center;
+    color: #00b5ad;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.footer_special a:nth-child(3){
+    color: gray;
+}
+.footer_special a{
+    font-weight: 300;
+    font-size: 1rem;
+}
+@media screen and (max-width: 500px) {
+    /* later for mobile size */
+  }

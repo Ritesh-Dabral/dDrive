@@ -1,0 +1,47 @@
+.container.logo {
+    margin-top: -2em;
+    margin-bottom: 2em;
+}
+
+.container.logo h3{
+    text-align: center;
+    margin-top: -1rem;
+    font-weight: 500;
+}
+
+.logo img{
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.login{
+    margin: 0 2rem 1rem 2rem;
+}
+
+#login span{
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 767px){
+
+    .login .vertical{
+        display: none;
+    }
+    .below720px{
+        border: 1px solid rgba(34,36,38,.15);
+    }
+    .ui.stackable.grid {
+        width: auto;
+        margin: 1rem 0;
+    }
+    .ui.stackable.grid>.column:not(.row) {
+        width: 100%!important;
+        margin: 1rem 0!important;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+        padding: 1rem 1rem!important;
+    }
+}

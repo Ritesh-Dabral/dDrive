@@ -1,0 +1,68 @@
+<%- include('partials/header') %>
+
+    <link rel="stylesheet" href="stylesheets/header.css" type="text/css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/login.css" type="text/css">
+</head>
+<body>
+    <!-- LOGO -->
+    <div class="container logo" >
+        <img src="images/logo.png" alt="dDrive LOGO">
+        <h3 class="ui header">Sign in to dDrive</h3>
+    </div>
+
+    <!-- LOGIN/SIGNUP -->
+    <div class="container login">
+        <div class="ui placeholder segment">
+            <div class="ui two column very relaxed stackable grid">
+
+                <!-- LOGIN -->
+              <div class="column container below720px">
+                  <form class="ui form" action="/login" method="POST">
+
+                    <div class="field">
+                        <label for="user">Username: </label>
+                        <input type="text" name="username" id="user" required><br>
+                    </div>
+
+                    <div class="field">
+                        <label for="pass">Password: </label>
+                        <input type="password" name="password" id="pass" required><br>
+                    </div>
+
+                    <button class="ui button" type="submit">Submit</button>
+                  </form>
+              </div>
+
+              <!-- SIGNUP -->
+              <div class="middle aligned column below720px">
+                    <form class="ui form" action="/signup" method="post">
+
+                        <div class="field">
+                            <label for="user">Username: </label>
+                            <input type="text" name="username" id="user" required><br>
+                        </div>
+
+                        <div class="field">
+                            <label for="Email">E-mail: </label>
+                            <input type="email" name="email" id="Email" required><br>                            
+                        </div>
+
+                        <div class="field">
+                            <label for="pass">Password: </label>
+                            <input type="password" name="password" id="pass" required><br>                            
+                        </div>
+
+                        <button class="ui button" type="submit">Submit</button>
+                    </form>
+              </div>
+            </div>
+            <div class="ui vertical divider">
+              Or
+            </div>
+          </div>
+    </div>
+
+
+    <script src="js/login.js"></script>
+<%- include('partials/footer') %>

@@ -1,0 +1,113 @@
+.container.logo {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.container.logo h1{
+    text-align: center;
+    margin-top: -1rem;
+    font-weight: 500;
+}
+
+.logo img{
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin-right: auto;
+}
+
+
+.ui.divider {
+    margin:1rem 1.5rem 2rem 1.5rem;
+}
+
+.logout{
+    float: right;
+    margin-right: 3rem;
+    margin-top: -6rem;
+}
+
+i.power.off.icon {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+h3 {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0;
+}
+
+form {
+    float: right;
+    margin-right: 2.5rem;
+    margin-bottom: 6rem;
+    font-size: small;
+}
+
+form input{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    height: 30rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: auto;
+}
+
+.container#allMaterial {
+    height: inherit;
+    width: inherit;
+    border: solid gray 0.1rem;
+    border-radius: 1em;
+    overflow: auto;
+}
+
+h3.runtimeEmpty{
+    margin-top: 10rem;
+    text-decoration: underline;
+}
+
+.runtimeEmpty{
+    font-weight: 300;
+    color: gray;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.customUploadBtn{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8%;
+    margin: 1em 0 1em 0;
+    font-family: monospace;
+}
+
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: cursive;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.eleDivider {
+    border-top: 1px solid rgba(34,36,38,.15);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    margin-top: -3rem;
+}
+
+@media only screen and (max-width: 767px){
+    .gap{
+        margin-top: 0.5rem;
+    }
+}
